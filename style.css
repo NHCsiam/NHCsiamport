@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300;400&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
-
+    
 }
 
 header{
@@ -15,7 +20,8 @@ header{
     position: fixed;
     z-index: 99;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    background: rgb(47, 47, 47);
+    background-color: rgb(34,40,49);
+
 }
 
 #chk1{
@@ -36,7 +42,7 @@ header .logo{
 }
 
 header ul {
-    flex:2;
+    flex:0.8;
     display: flex;
     justify-content:space-evenly
 }
@@ -49,16 +55,19 @@ header ul li a{
     text-decoration: none;
     color:rgb(246, 246, 246);
     font-weight: 600;
+    
     text-transform: uppercase;
     padding: 10px 15px;
+    
 }
 
 header ul li a:hover{
-    border-bottom: 2px solid cadetblue;
+
     background-color: rgb(241, 241, 241);
     color: rgb(33, 33, 33);
     box-shadow: 0 0 15px violet;
-    border-radius:10%;
+    border-radius:25px;
+
 }
 
 header .menu{
@@ -71,7 +80,7 @@ header .menu{
         position: fixed;
         top:100px;
         right: -100%;
-        background: rgba(197, 197, 197, 0.625);
+        background: rgba(246, 246, 246, 0.625);
         height: calc(100vh - 100px);
         width:50%;
         flex-direction: column;
@@ -88,3 +97,182 @@ header .menu{
     }
 }
 
+/* first_section */
+.info{
+    background-color: rgb(34,40,49);
+}
+#name{
+    padding-top: 150px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+.pashe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.personalinfo {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    text-align: left;
+    padding-top: 11px;
+    padding-left: 46px;
+    padding-right: 50px;
+    flex: 1;
+    color: aliceblue;
+}
+
+.personalinfo a{
+    text-decoration: none;
+    color: rgba(221, 214, 222, 0.975);
+}
+
+.animation{
+    margin-top: 140px;
+    align-items: right;
+    justify-content:right;
+    flex: 1;
+}
+
+.aboutme{
+    padding: 120px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.aboutmepashe{
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+}
+
+.aboutmepashe{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.meinfo{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    text-align: left;
+    padding-left: 55px;
+    padding-right: 50px;
+    flex: 1;
+    color: aliceblue;
+}
+.meinfo h2{
+    padding-left: 32px;
+    padding-bottom: 20px;
+  
+}
+#abC{
+    padding-left: 32px;
+    width: 650px;
+}
+
+.mypic img{
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 350px;
+    flex: 1;
+}
+
+.meinfo a{
+    text-decoration: none;
+}
+
+.btn{
+    margin-left: 16px;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: aliceblue;
+    cursor: pointer;
+    background-color:  rgb(34,40,49);
+    border-radius: 25px;
+}
+.btn:hover{
+    background-color: rgb(241, 241, 241);
+    color: rgb(33, 33, 33);
+    box-shadow: 0 0 15px violet;
+    border-radius:25px;
+}
+.works{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    text-align: left;
+    padding-top: 86px;
+    padding-left: 32px;
+    flex: 1;
+    color: aliceblue;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    background-color: rgb(34,40,49);
+}
+
+.imgelement{
+    padding-top: 50px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#skill{
+    background-color: rgb(34,40,49);
+}
+
+#skill h2{
+    padding-top: 65px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.tbl{
+    padding-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 65px;
+    text-align: center;
+    border-spacing: px;
+    background-color: rgb(34,40,49);
+
+}
+th{
+
+    padding: 20px;
+    background-color: rgba(46, 53, 63, 0.925);
+    color: rgb(3, 173, 182);
+    font: "Montserrat";
+
+}
+td{
+    padding: 25px 30px;
+    
+}
+tr{
+    background-color: #ffffff;
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.1);
+    margin-bottom: px;
+}
+
+.tbl tr:nth-child(even){
+    background-color: rgba(46, 53, 63, 0.925);
+    color: #ffffff;
+}
+.tbl tr:nth-child(odd){
+    background-color: rgba(85, 96, 111, 0.925);
+    color: #ffffff;
+}
